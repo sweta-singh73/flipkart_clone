@@ -1,0 +1,239 @@
+/* Header Container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.flipkart-logo {
+  height: 40px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: rgb(242, 247, 253);
+  border-radius: 8px;
+  padding: 8px;
+  width: 80%;
+  height: 40px;
+  max-width: 600px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  font-size: 18px;
+  background: transparent;
+}
+
+/* Search Icon */
+.search-icon {
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 8px;
+}
+
+/* Right Section */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Navigation Items */
+.nav-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s;
+  padding: 10px;
+  position: relative;
+}
+
+/* Increase icon size */
+.icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.large-icon {
+  font-size: 24px;
+}
+.header-components{
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.dropdown-menu a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Dropdown Arrow */
+.dropdown-icon {
+  margin-left: 5px;
+  font-size: 18px;
+  color: gray;
+}
+
+/* Hover Effect */
+#login:hover {
+background-color: blue;
+color: white;
+}
+
+
+/* design footer */
+
+.footer {
+  background-color: #172337;
+  color: white;
+  padding: 30px 50px;
+  font-size: 14px;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: #b0bec5;
+  transition: color 0.3s;
+}
+
+.footer-column ul li:hover {
+  color: white;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #455a64;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: #b0bec5;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.dot{
+  font-weight: lighter;
+}
+
+/*signup style*/
+.signup-button{
+  color: rgb(53, 16, 218);
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+/*login botton style */
+.login-button{
+  border: none;
+  background-color: transparent;
+}
+.login-nav:hover{
+  background-color: blue;
+
+}
+

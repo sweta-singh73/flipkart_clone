@@ -1,0 +1,100 @@
+
+.admin-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  /* background-image: url('../public/road.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; */
+
+
+}
+.div-container{
+  background-color:blue;
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+.form-container{
+  width: 100%;
+  box-shadow: 0px 4px 4px 0px rgb(41, 86, 107);
+
+}
+
+.admin-login-box {
+  padding: 30px;
+  border-radius: 10px;
+  background: white;
+  width: 400px;
+  text-align: center;
+  /* box-shadow: 0px 4px 4px 0px rgb(41, 86, 107); */
+
+}
+
+.admin-login-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 40px;
+}
+
+.input-group {
+  margin: 5%;
+  text-align: left;
+  padding: 5px;
+
+}
+
+.input-group label {
+  display: block;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 30px;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.login-button-form {
+  width: 93%;
+  padding: 10px;
+  border: none;
+  background: blue;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 20px;
+}
+
+.login-button:hover {
+  background: #0056b3;
+}
+
+.response-container {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}

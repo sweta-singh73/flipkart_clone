@@ -1,0 +1,467 @@
+.category-container {
+  position: fix;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  height: 10rem;
+  background-color: #f0f0f0;
+}
+
+.error-message {
+  color: red;
+  font-size: 16px;
+}
+
+.no-data {
+  font-size: 18px;
+  color: gray;
+}
+
+/* Horizontal Scroll Container */
+.category-horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+/* Hide scrollbar for Webkit browsers */
+.category-horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.category-card {
+  position: relative;
+  background: transparent;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  width: 11.11%; /* 100% / 9 items */
+  margin: 7px;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+/* Category image styling */
+.category-image {
+  object-fit: cover;
+  border-radius: 8px;
+  height: auto;
+
+}
+
+/* Container for the category name and dropdown icon */
+.category-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  position: relative; /* To make dropdown work */
+}
+
+.category-info:hover {
+  color: blue;
+}
+
+/* Category name styling */
+.category-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center; /* To align the icon next to text */
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Dropdown Icon */
+.icon {
+  margin-left: 5px; /* Space between the name and dropdown icon */
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Smooth transition for rotation */
+}
+
+/* Rotate the dropdown icon on hover */
+.category-info:hover .icon {
+  transform: rotate(180deg); /* Rotate the icon when hovering over category-info */
+}
+
+/* Subcategory list */
+.subcategory-list {
+  display: none; /* Default is hidden */
+  position: relative;
+  top: 100%; /* Place it directly below the category */
+  left: 0;
+  background-color: white;
+  color: black;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  width: 10rem;
+  height: 400px;
+  margin-top: 5px;
+  z-index: 100; /* Ensure it appears above other content */
+  
+}
+
+/* Show subcategory list when hovering over category name or category card */
+.category-info:hover .subcategory-list,
+.category-card:hover .subcategory-list {
+  display: block;
+
+}
+
+.subcategory-list:hover {
+  display: block; /* Keep it visible when hovering over the list */
+}
+
+/* Optional: You can add more styles for the subcategory list */
+.subcategory-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subcategory-list li {
+  padding: 5px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.subcategory-list li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Ensure the category card itself has relative positioning */
+.category-card {
+  position: relative; /* Ensures subcategory list is positioned relative to the card */
+}
+
+/* Optional hover effect on category card */
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.carousel-container {
+  position: relative; /* Keeps the carousel fixed in place */
+  z-index: 1; /* Lower z-index so the dropdown stays above it */
+}
+
+.subcategory-item {
+  position: relative;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subcategory-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Inner subcategory dropdown */
+.inner-subcategory-list {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  top: 0;
+  left: 100%;
+  width: 200px;
+  z-index: 200;
+ 
+
+}
+
+.inner-icon {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.subcategory-item:hover .inner-icon {
+  transform: rotate(90deg);
+}
+
+
+/* Signup form styling */
+.form-container {
+  width: 350px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.submit {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #218838;
+}
+
+.response-container {
+  margin-top: 20px;
+  padding: 10px;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/*cart page srtyling */
+.cart-container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background: white;
+}
+
+.cart-header {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.cart-items {
+  width: 65%;
+}
+
+.cart-item {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.cart-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.cart-item-details {
+  margin-left: 20px;
+}
+
+.cart-item-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cart-quantity {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cart-quantity button {
+  border: none;
+  background: #ddd;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.remove-button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.cart-summary {
+  width: 30%;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.summary-details p {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.discount {
+  color: green;
+}
+
+.free-delivery {
+  color: blue;
+}
+
+.place-order-button {
+  width: 100%;
+  background: orange;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* product css */
+/* ProductPage.css */
+.product-page {
+  width: 90%;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.loading-text,
+.no-products {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Flipkart-style Grid Layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Flipkart-like Product Card */
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  padding: 15px;
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product-image {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Product Name */
+.product-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Product Price */
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff5722;
+}
+
+.pagination-btn{
+  height: 40px;
+  width: 90px;
+  margin-right: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+
+
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: auto;
+}
+
+.pagination-btn-next{
+  height: 40px;
+  width: 90px;
+  margin-left: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+/* TopInner subcategory component css */
+.top-inner-subcategories-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.subcategory-item {
+  text-align: center;
+  min-width: 120px;
+}
+
+.subcategory-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.subcategory-name {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+
